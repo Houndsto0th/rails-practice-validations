@@ -4,9 +4,11 @@
 
   <% if @organization.errors.present? %>
     <% @organization.errors.full_messages.each do |message| %>
-      <p>
-        <%= message %>
-      </p>
+      <div class="alert alert-danger">
+        <p>
+          <%= message %>
+        </p>
+      </div>
     <%end%>
   <%end%>
 
